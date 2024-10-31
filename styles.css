@@ -1,71 +1,98 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Style */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fdfdfd;
+  color: #2d2d2d;
+}
+
+/* Password Protection Screen */
+#password-protect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
   color: #333;
-}
-
-header, #password-protect {
-  background: #008080;
-  color: white;
   text-align: center;
+}
+
+#password-protect input, #password-protect button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+#password-protect button {
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  background-color: #4B2E83;
+  color: white;
   padding: 20px;
+  text-align: center;
 }
 
-header h1, #password-protect h2 {
-  font-size: 2em;
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
+/* Navigation Menu */
 nav ul {
   list-style: none;
-  text-align: center;
-  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: #2E8B57;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #008080;
+  color: white;
   font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
 }
 
+nav ul li a:hover {
+  background-color: #fff;
+  color: #2E8B57;
+  border-radius: 5px;
+}
+
+/* Common Styling for Sections */
 section {
-  padding: 20px;
-  margin: 15px 0;
-  background: white;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
   border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background: #333;
   color: white;
+  margin-top: 30px;
 }
 
-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-form input, form textarea, form button {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-}
-
-button {
-  background: #008080;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
