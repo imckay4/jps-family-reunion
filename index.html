@@ -8,32 +8,88 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Password Protection -->
+  <!-- Password Protection Screen -->
   <div id="password-protect">
-    <h2>Welcome to the JPS Family Reunion</h2>
-    <p>Please enter the password to access our family site:</p>
-    <input type="password" id="password-input" placeholder="Enter password">
-    <button onclick="checkPassword()">Enter</button>
-    <p id="error-message" style="color: red;"></p>
+    <div class="password-container">
+      <h2>Welcome to the JPS Family Reunion</h2>
+      <p>Please enter the password to access our family site:</p>
+      <input type="password" id="password-input" placeholder="Enter password">
+      <button onclick="checkPassword()">Enter</button>
+      <p id="error-message" style="color: red;"></p>
+    </div>
   </div>
 
   <!-- Main Content -->
   <div id="main-content" style="display: none;">
-    <!-- Home Page -->
     <header>
-      <h1>Welcome to the JPS Family</h1>
-      <p>Celebrating unity, heritage, and empowerment through generations.</p>
+      <div class="header-content">
+        <h1>JPS Family Reunion</h1>
+        <p>Our annual gathering of love, memories, and family traditions.</p>
+        <p><strong>51st Reunion:</strong> Join us for July 4th weekend next year!</p>
+      </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#connect">Get Connected</a></li>
-        <li><a href="#support">Support</a></li>
-        <li><a href="#media">Media</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
+    
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#connect">Get Connected</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <!-- Sections with individual content for each navigation link -->
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Learn about the legacy of the James, Person, and Smith families and our journey through generations.</p>
+        <h3>Family Tree</h3>
+        <p>Discover your roots and see how we’re all connected.</p>
+        <h3>Notable Ancestors</h3>
+        <p>Explore the stories of family members who left an unforgettable legacy.</p>
+      </section>
+
+      <section id="connect">
+        <h2>Get Connected</h2>
+        <h3>Announcements & News</h3>
+        <p>Stay updated with family birthdays, births, and recent news. Submit your updates here.</p>
+        <h3>Upcoming Events</h3>
+        <p>Check out what's coming up next and get details for the big reunion.</p>
+        <h3>Event Calendar</h3>
+        <p>View our full family event calendar.</p>
+      </section>
+
+      <section id="support">
+        <h2>Support & Community Involvement</h2>
+        <p>If you need a hand or want to help out, here’s where family members can connect and support each other.</p>
+      </section>
+
+      <section id="media">
+        <h2>Photos & Videos</h2>
+        <p>View our family photo albums and videos from past reunions.</p>
+        <h3>Social</h3>
+        <p>Follow our family social media for even more updates.</p>
+      </section>
+
+      <section id="resources">
+        <h2>Resources</h2>
+        <h3>Family Recipes</h3>
+        <p>Share and discover recipes that bring our family’s flavor to the table.</p>
+        <h3>Genealogy Resources</h3>
+        <p>Find tools to explore our history.</p>
+        <h3>Directory</h3>
+        <p>Our private family directory for staying connected.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For questions or more information, feel free to reach out!</p>
+      </section>
+    </main>
   </div>
 </body>
 </html>
