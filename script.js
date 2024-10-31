@@ -1,5 +1,5 @@
 function checkPassword() {
-  const correctPassword = "jpsfamily2024";  // Set the desired password here
+  const correctPassword = "jpsfamily2024";  // JPSF@mily
   const passwordInput = document.getElementById("password-input").value;
   const errorMessage = document.getElementById("error-message");
   
